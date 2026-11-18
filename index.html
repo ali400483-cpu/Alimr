@@ -53,7 +53,7 @@
 })();
 </script>
 
-<section class="cloud-panel" id="cloudPanel"><h2>التوقيع الجماعي من أجهزة الزملاء</h2><p>احفظ المحضر في السحابة لإنشاء رابط مشاركة. يجب إدخال أسماء الأعضاء قبل الإنشاء. الرابط يتيح لأي شخص يملكه اختيار اسم والتوقيع؛ لا يثبت الهوية.</p><div class="actions"><button type="button" id="cloudCreate">إنشاء رابط توقيع للمحضر الحالي</button><button type="button" id="cloudRefresh">تحديث التوقيعات</button><button type="button" id="cloudArchive">أرشيف المحاضر المشتركة</button><button type="button" id="finalArchiveButton">الأرشيف النهائي السحابي</button></div><label>رابط الاجتماع للمشاركة عبر واتساب</label><input id="cloudLink" readonly placeholder="يظهر الرابط هنا بعد الإنشاء"><div class="actions"><button type="button" id="copyCloudLink">نسخ رابط التوقيع</button></div><p class="cloud-status" id="cloudStatus">لم يُنشأ رابط سحابي بعد.</p><div id="cloudList"></div><div id="finalArchiveList" class="archive-list"></div></section>
+<section class="cloud-panel" id="cloudPanel"><h2>التوقيع الجماعي من أجهزة الزملاء</h2><p>احفظ المحضر في السحابة لإنشاء رابط مشاركة. لا تحتاج إلى إدخال أسماء الأعضاء. كل عضو يكتب اسمه ووصفه الوظيفي ويوقّع بنفسه. الرابط لا يثبت الهوية.</p><div class="actions"><button type="button" id="cloudCreate">إنشاء رابط توقيع للمحضر الحالي</button><button type="button" id="cloudRefresh">تحديث التوقيعات</button><button type="button" id="cloudArchive">أرشيف المحاضر المشتركة</button><button type="button" id="finalArchiveButton">الأرشيف النهائي السحابي</button></div><label>رابط الاجتماع للمشاركة عبر واتساب</label><input id="cloudLink" readonly placeholder="يظهر الرابط هنا بعد الإنشاء"><div class="actions"><button type="button" id="copyCloudLink">نسخ رابط التوقيع</button></div><p class="cloud-status" id="cloudStatus">لم يُنشأ رابط سحابي بعد.</p><div id="cloudList"></div><div id="finalArchiveList" class="archive-list"></div></section>
 <section class="signer-view" id="signerView" hidden><h1>التوقيع على محضر الاجتماع</h1><p class="note">هذا الرابط لا يتحقق من هوية الموقّع. لا توقع باسم شخص آخر.</p><div id="signerInfo"></div><h2 class="signer-section-title">الاطلاع على المحضر قبل التوقيع</h2><div id="signerPreview"></div><h2 class="signer-section-title">توقيعات الأعضاء</h2><div id="signerMembers"></div><div class="actions"><button type="button" id="signerRefresh">تحديث حالة التوقيعات</button></div></section>
 <nav class="nav"><button id="showEditor" class="active" type="button">محضر اجتماع</button><button id="showArchive" type="button">أرشيف الاجتماعات</button></nav><div class="sheet" id="editor">
 <header><div class="ministry">المملكة العربية السعودية<br>وزارة التعليم<br>إدارة تعليم جازان<br>مكتب التعليم الخاص<br>مدارس ابن رشد بجازان<br>القسم الأهلي</div><div><img id="logo" class="logo" alt="موضع شعار المدرسة"><div class="logo-label">يمكن إضافة شعار المدرسة من الزر أدناه</div></div></header>
@@ -67,7 +67,7 @@
 <h2>جدول أعمال الاجتماع</h2><table><thead><tr><th class="num">م</th><th>موضوع جدول الأعمال</th></tr></thead><tbody id="agenda"><tr><td class="num">1</td><td><textarea aria-label="موضوع جدول الأعمال 1" rows="2"></textarea></td></tr><tr><td class="num">2</td><td><textarea aria-label="موضوع جدول الأعمال 2" rows="2"></textarea></td></tr><tr><td class="num">3</td><td><textarea aria-label="موضوع جدول الأعمال 3" rows="2"></textarea></td></tr><tr><td class="num">4</td><td><textarea aria-label="موضوع جدول الأعمال 4" rows="2"></textarea></td></tr><tr><td class="num">5</td><td><textarea aria-label="موضوع جدول الأعمال 5" rows="2"></textarea></td></tr><tr><td class="num">6</td><td><textarea aria-label="موضوع جدول الأعمال 6" rows="2"></textarea></td></tr></tbody></table>
 <p class="intro">إنه في تمام الساعة <input class="inline" placeholder="الساعة"> يوم <input class="inline" placeholder="اليوم"> الموافق <input class="inline" placeholder="التاريخ"> تمت مناقشة وتبادل الآراء والرؤى التطويرية، وعليه تمت التوصيات بالآتي:</p>
 <h2>التوصيات</h2><table><thead><tr><th class="num">م</th><th>التوصية</th><th>الجهة المكلفة بالتنفيذ</th><th>مدة التنفيذ</th><th>الجهة التابعة للتنفيذ</th></tr></thead><tbody id="recommendations"></tbody></table>
-<h2>الأعضاء والتوقيعات</h2><table><thead><tr><th class="num">م</th><th>الاسم</th><th>الوصف الوظيفي</th><th>التوقيع</th></tr></thead><tbody id="members"><tr><td class="num">1</td><td><input aria-label="اسم العضو 1"></td><td><input aria-label="الوصف الوظيفي للعضو 1"></td><td><input aria-label="توقيع العضو 1"></td></tr><tr><td class="num">2</td><td><input aria-label="اسم العضو 2"></td><td><input aria-label="الوصف الوظيفي للعضو 2"></td><td><input aria-label="توقيع العضو 2"></td></tr><tr><td class="num">3</td><td><input aria-label="اسم العضو 3"></td><td><input aria-label="الوصف الوظيفي للعضو 3"></td><td><input aria-label="توقيع العضو 3"></td></tr><tr><td class="num">4</td><td><input aria-label="اسم العضو 4"></td><td><input aria-label="الوصف الوظيفي للعضو 4"></td><td><input aria-label="توقيع العضو 4"></td></tr><tr><td class="num">5</td><td><input aria-label="اسم العضو 5"></td><td><input aria-label="الوصف الوظيفي للعضو 5"></td><td><input aria-label="توقيع العضو 5"></td></tr><tr><td class="num">6</td><td><input aria-label="اسم العضو 6"></td><td><input aria-label="الوصف الوظيفي للعضو 6"></td><td><input aria-label="توقيع العضو 6"></td></tr><tr><td class="num">7</td><td><input aria-label="اسم العضو 7"></td><td><input aria-label="الوصف الوظيفي للعضو 7"></td><td><input aria-label="توقيع العضو 7"></td></tr><tr><td class="num">8</td><td><input aria-label="اسم العضو 8"></td><td><input aria-label="الوصف الوظيفي للعضو 8"></td><td><input aria-label="توقيع العضو 8"></td></tr><tr><td class="num">9</td><td><input aria-label="اسم العضو 9"></td><td><input aria-label="الوصف الوظيفي للعضو 9"></td><td><input aria-label="توقيع العضو 9"></td></tr><tr><td class="num">10</td><td><input aria-label="اسم العضو 10"></td><td><input aria-label="الوصف الوظيفي للعضو 10"></td><td><input aria-label="توقيع العضو 10"></td></tr></tbody></table><div class="signatures"><div class="signature">معدّ المحضر: <input placeholder="الاسم والتوقيع"></div><div class="signature">اعتماد قائد المدرسة: <input placeholder="الاسم والتوقيع"></div></div>
+<h2>الأعضاء والتوقيعات (تُضاف تلقائيًا من روابط التوقيع)</h2><table><thead><tr><th class="num">م</th><th>الاسم</th><th>الوصف الوظيفي</th><th>التوقيع</th></tr></thead><tbody id="members"></tbody></table><div class="signatures"><div class="signature">معدّ المحضر: <input placeholder="الاسم والتوقيع"></div><div class="signature">اعتماد قائد المدرسة: <input placeholder="الاسم والتوقيع"></div></div>
 <div class="actions"><button type="button" id="saveMeeting">حفظ المحضر في الأرشيف</button><button type="button" id="newMeeting" class="secondary">محضر جديد</button><label class="upload">إضافة شعار المدرسة<input id="logoUpload" type="file" accept="image/*"></label><button id="addRow" type="button">إضافة توصية</button><button onclick="window.print()" type="button">طباعة / حفظ PDF</button><button class="secondary" onclick="saveDraft()" type="button">حفظ مسودة على الجهاز</button><button class="secondary" onclick="clearDraft()" type="button">مسح المسودة</button></div>
 <p class="note">الأرشيف والتوقيعات محفوظة على هذا المتصفح والجهاز فقط، وقد تُفقد عند مسح بيانات المتصفح. لا تستخدم جهازًا مشتركًا للمحاضر الخاصة. التوقيع المرسوم ليس توقيعًا رقميًا موثّقًا للهوية.</p>
 </div>
@@ -111,15 +111,30 @@ const CLOUD_KEY='sb_publishable_6ohoPmG4cUZslRgMtV15rw_2KSMU5Lr';
 const CLOUD_STORAGE='ibnrushd_shared_links_v1';
 let sharedToken='', signerMode=false, signingSlot=-1;
 async function cloudRpc(fn,params){const r=await fetch(CLOUD_URL+'/rest/v1/rpc/'+fn,{method:'POST',headers:{'apikey':CLOUD_KEY,'Authorization':'Bearer '+CLOUD_KEY,'Content-Type':'application/json'},body:JSON.stringify(params)});const raw=await r.text();let obj;try{obj=JSON.parse(raw)}catch{obj=raw}if(!r.ok)throw Error(obj.message||obj.hint||('HTTP '+r.status));return obj}
-function memberNames(){return [...document.querySelectorAll('#members tr')].map(tr=>tr.cells[1].querySelector('input').value.trim())}
 function getCloudLinks(){try{return JSON.parse(localStorage.getItem(CLOUD_STORAGE)||'[]')}catch{return []}}
 function saveCloudLink(token,title){let a=getCloudLinks().filter(x=>x.token!==token);a.unshift({token,title,created:new Date().toISOString()});localStorage.setItem(CLOUD_STORAGE,JSON.stringify(a))}
 function cloudLink(t){return location.origin+location.pathname+'?meeting='+encodeURIComponent(t)}
 function setCloudStatus(t){document.getElementById('cloudStatus').textContent=t}
-async function createShared(){const names=memberNames();if(!names.some(Boolean)){alert('أدخل اسم عضو واحد على الأقل في جدول الأعضاء');return}if(!confirm('سيتم إنشاء نسخة مشتركة من المحضر. لا يمكن تعديل بياناتها بعد إرسال الرابط؛ ويمكن لمن يحمل الرابط التوقيع باسم أي عضو. هل تريد المتابعة؟'))return;try{setCloudStatus('جارٍ إنشاء المحضر...');const m=getMeeting();const content={values:m.values,recommendations:m.recommendations,members:names,logo:m.logo||'',title:document.querySelector('#editor .grid input').value.trim(),created:new Date().toISOString()};const token=await cloudRpc('meeting_create',{p_content:content});sharedToken=token;document.getElementById('cloudLink').value=cloudLink(token);saveCloudLink(token,content.title||'محضر اجتماع');setCloudStatus('تم إنشاء رابط التوقيع. انسخه وأرسله إلى الزملاء.');await refreshCloud()}catch(e){setCloudStatus('تعذر الإنشاء: '+e.message)}}
-function applyCloudSignatures(sigs){document.querySelectorAll('#members tr').forEach((tr,i)=>{const img=tr.querySelector('.sig-preview');const sign=sigs.find(s=>s.slot===i+1);if(!img)return;if(sign){img.dataset.signature=sign.image;img.src=sign.image;img.hidden=false;img.nextElementSibling.textContent='تم التوقيع — '+new Date(sign.signed_at).toLocaleString('ar-SA');img.nextElementSibling.disabled=true}else{img.dataset.signature='';img.removeAttribute('src');img.hidden=true;img.nextElementSibling.textContent='بانتظار توقيع الزميل من جهازه';img.nextElementSibling.disabled=true}})}
-async function refreshCloud(){if(!sharedToken){alert('أنشئ رابط الاجتماع أو افتحه من الأرشيف المشترك أولًا');return}try{const m=await cloudRpc('meeting_read',{p_token:sharedToken});if(!m)throw Error('المحضر غير موجود');applyCloudSignatures(m.signatures||[]);await tryFinalArchive(sharedToken,m);setCloudStatus('التوقيعات: '+(m.signatures||[]).length+' من '+m.content.members.filter(Boolean).length+' — آخر تحديث '+new Date().toLocaleTimeString('ar-SA'))}catch(e){setCloudStatus('تعذر تحديث التوقيعات: '+e.message)}}
-function renderCloudArchive(){const box=document.getElementById('cloudList');box.replaceChildren();const a=getCloudLinks();if(!a.length){box.textContent='لا توجد روابط محفوظة على هذا الجهاز.';return}const title=document.createElement('h3');title.textContent='روابط المحاضر التي أنشأتها من هذا الجهاز';box.append(title);a.forEach(x=>{const row=document.createElement('div');row.className='archive-item';const name=document.createElement('span');name.textContent=x.title;const b=document.createElement('button');b.textContent='فتح المحضر وتحديث توقيعاته';b.onclick=async()=>{sharedToken=x.token;document.getElementById('cloudLink').value=cloudLink(x.token);try{const m=await cloudRpc('meeting_read',{p_token:x.token});if(!m)throw Error('غير موجود');setMeeting({values:m.content.values,recommendations:m.content.recommendations,signatures:[]});show('editor');await refreshCloud()}catch(e){alert(e.message)}};row.append(name,b);box.append(row)})}
+async function createShared(){
+ if(!confirm('إنشاء محضر مشترك؟ سيتمكن كل من يحمل الرابط من إدخال اسمه والتوقيع، ولا يمكن تغيير محتوى النسخة بعد إنشائها.'))return;
+ try{setCloudStatus('جارٍ إنشاء المحضر...');const m=getMeeting();const content={values:m.values,recommendations:m.recommendations,logo:m.logo||'',title:document.querySelector('#editor .grid input').value.trim(),created:new Date().toISOString()};
+ const token=await cloudRpc('alimr_open_create',{p_content:content});sharedToken=token;document.getElementById('cloudLink').value=cloudLink(token);saveCloudLink(token,content.title||'محضر اجتماع');setCloudStatus('تم إنشاء رابط التوقيع. أرسله للأعضاء، وكل عضو يسجل اسمه بنفسه.');await refreshCloud()}
+ catch(e){setCloudStatus('تعذر الإنشاء: '+e.message)}
+}
+function renderSignaturesInEditor(sigs){
+ const body=document.getElementById('members');body.replaceChildren();
+ sigs.forEach((sign,i)=>{const tr=document.createElement('tr');
+ const n=document.createElement('td');n.className='num';n.textContent=i+1;
+ const name=document.createElement('td');name.textContent=sign.name;
+ const role=document.createElement('td');role.textContent=sign.role||'—';
+ const td=document.createElement('td');const img=document.createElement('img');img.className='sig-preview';img.alt='توقيع '+sign.name;img.src=sign.image;td.append(img);
+ tr.append(n,name,role,td);body.append(tr)})
+}
+async function refreshCloud(){if(!sharedToken){alert('أنشئ رابط الاجتماع أو افتحه من الأرشيف المشترك أولًا');return}
+ try{const m=await cloudRpc('alimr_open_read',{p_token:sharedToken});if(!m)throw Error('المحضر غير موجود');renderSignaturesInEditor(m.signatures||[]);setCloudStatus('عدد الأعضاء الموقعين: '+(m.signatures||[]).length+' — '+(m.closed?'تم إغلاق التوقيع وأرشفة المحضر':'التوقيع متاح')+' — آخر تحديث '+new Date().toLocaleTimeString('ar-SA'))}
+ catch(e){setCloudStatus('تعذر تحديث التوقيعات: '+e.message)}
+}
+function renderCloudArchive(){const box=document.getElementById('cloudList');box.replaceChildren();const a=getCloudLinks();if(!a.length){box.textContent='لا توجد روابط محفوظة على هذا الجهاز.';return}const title=document.createElement('h3');title.textContent='روابط المحاضر التي أنشأتها من هذا الجهاز';box.append(title);a.forEach(x=>{const row=document.createElement('div');row.className='archive-item';const name=document.createElement('span');name.textContent=x.title;const b=document.createElement('button');b.textContent='فتح المحضر وتحديث توقيعاته';b.onclick=async()=>{sharedToken=x.token;document.getElementById('cloudLink').value=cloudLink(x.token);try{const m=await cloudRpc('alimr_open_read',{p_token:x.token});if(!m)throw Error('غير موجود');setMeeting({values:m.content.values,recommendations:m.content.recommendations,signatures:[]});show('editor');await refreshCloud()}catch(e){alert(e.message)}};row.append(name,b);box.append(row)})}
 
 /* عرض المحضر كاملاً للعضو قبل التوقيع، دون السماح بتحرير النسخة المشتركة */
 function renderSignerPreview(meeting){
@@ -137,81 +152,63 @@ function renderSignerPreview(meeting){
  });
  clone.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));
  const logo=clone.querySelector('.logo');if(logo){if(content.logo)logo.src=content.logo;else logo.removeAttribute('src')}
- // Member rows are selected from the third table in the preview.
+ // أنشئ صفًا لكل عضو وقّع بالفعل، دون سقف عددي.
  const tables=clone.querySelectorAll('table');
- const memberRows=tables.length>=3?[...tables[2].querySelectorAll('tbody tr')]:[];
- memberRows.forEach((tr,i)=>{
-   const cell=tr.cells[3];if(!cell)return;cell.replaceChildren();
-   const sig=(meeting.signatures||[]).find(x=>Number(x.slot)===i+1);
-   if(sig&&typeof sig.image==='string'&&sig.image.startsWith('data:image/')){
-     const img=document.createElement('img');img.className='sig-preview';img.src=sig.image;img.alt='توقيع محفوظ';cell.append(img);
-   }else cell.textContent='لم يوقّع بعد';
- });
+ if(tables.length>=3){const body=tables[2].querySelector('tbody');body.replaceChildren();
+ (meeting.signatures||[]).forEach((sig,i)=>{const tr=document.createElement('tr');
+ [String(i+1),sig.name,sig.role||'—'].forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.append(td)});
+ const td=document.createElement('td');const img=document.createElement('img');img.className='sig-preview';img.alt='توقيع العضو';img.src=sig.image;td.append(img);tr.append(td);body.append(tr)})}
  host.append(clone);
 }
 
 function makeText(tag,value,cls){const el=document.createElement(tag);el.textContent=value;if(cls)el.className=cls;return el}
-async function showSigner(token){signerMode=true;document.getElementById('cloudPanel').hidden=true;document.querySelector('.nav').hidden=true;document.getElementById('editor').hidden=true;document.getElementById('archive').hidden=true;document.getElementById('signerView').hidden=false;const info=document.getElementById('signerInfo'),members=document.getElementById('signerMembers');info.textContent='جارٍ تحميل المحضر...';members.replaceChildren();try{const m=await cloudRpc('meeting_read',{p_token:token});if(!m)throw Error('الرابط غير صالح أو المحضر غير موجود');info.replaceChildren(makeText('h2',m.content.title||'محضر اجتماع'),makeText('p','اطلع على محضر الاجتماع وجدول الأعمال والتوصيات كاملًا قبل التوقيع. لا يثبت الرابط هوية الموقّع.'));renderSignerPreview(m);m.content.members.forEach((name,i)=>{if(!name)return;const row=document.createElement('div');row.className='signer-row';row.append(makeText('strong',(i+1)+' — '+name));const signed=(m.signatures||[]).find(s=>s.slot===i+1);if(signed){row.append(makeText('p','تم التوقيع بتاريخ '+new Date(signed.signed_at).toLocaleString('ar-SA')))}else{const b=document.createElement('button');b.textContent='التوقيع باسمي';b.onclick=()=>{if(!confirm('أقر بأنني '+name+' وأنني أوقع باسمي. هذا النظام لا يتحقق من الهوية.'))return;signingSlot=i+1;openSignature(i)};row.append(b)}members.append(row)})}catch(e){info.textContent='تعذر فتح المحضر: '+e.message}
+let signerName='',signerRole='';
+async function showSigner(token){
+ signerMode=true;document.getElementById('cloudPanel').hidden=true;document.querySelector('.nav').hidden=true;document.getElementById('editor').hidden=true;document.getElementById('archive').hidden=true;document.getElementById('signerView').hidden=false;
+ const info=document.getElementById('signerInfo'),members=document.getElementById('signerMembers');info.textContent='جارٍ تحميل المحضر...';members.replaceChildren();
+ try{const m=await cloudRpc('alimr_open_read',{p_token:token});if(!m)throw Error('الرابط غير صالح أو المحضر غير موجود');
+ info.replaceChildren(makeText('h2',m.content.title||'محضر اجتماع'),makeText('p','اطلع على المحضر كاملًا ثم أدخل اسمك ووقّع. لا يثبت الرابط هوية الموقّع.'));
+ renderSignerPreview(m);
+ const form=document.createElement('div');form.className='cloud-panel';
+ if(m.closed){form.append(makeText('p','تم إغلاق التوقيع وأرشفة المحضر.'))}
+ else{
+ const nameLabel=makeText('label','اسم العضو الثلاثي');const name=document.createElement('input');name.placeholder='اكتب اسمك الثلاثي';name.maxLength=120;
+ const roleLabel=makeText('label','الوصف الوظيفي (اختياري)');const role=document.createElement('input');role.placeholder='مثال: عضو اللجنة';role.maxLength=120;
+ const sign=document.createElement('button');sign.type='button';sign.textContent='✍ تسجيل الاسم والتوقيع';sign.onclick=()=>{signerName=name.value.trim().replace(/\s+/g,' ');signerRole=role.value.trim();if(signerName.length<5){alert('يرجى إدخال الاسم الثلاثي');return}if(!confirm('أقر بأنني صاحب الاسم المدخل وأنني أوقّع باسمي. لا توجد آلية للتحقق من الهوية.'))return;openSignerCanvas()};
+ form.append(nameLabel,name,roleLabel,role,sign);
+ }
+ members.append(form,makeText('h2','الأعضاء الموقعون ('+(m.signatures||[]).length+')'));
+ (m.signatures||[]).forEach((sig,i)=>{const row=document.createElement('div');row.className='signer-row';row.append(makeText('strong',(i+1)+' — '+sig.name+' — '+(sig.role||'عضو')),makeText('p','تم التوقيع: '+new Date(sig.signed_at).toLocaleString('ar-SA')));members.append(row)})
+ }catch(e){info.textContent='تعذر فتح المحضر: '+e.message}
 }
-// استبدال إجراء اعتماد التوقيع في وضع الزميل فقط
+function openSignerCanvas(){modal.hidden=false;document.getElementById('signatureTitle').textContent='توقيع: '+signerName;canvas.width=900;canvas.height=330;ctx.lineWidth=4;ctx.strokeStyle='#152e4c';ctx.lineCap='round';ctx.lineJoin='round';hasInk=false;ctx.clearRect(0,0,canvas.width,canvas.height)}
 const oldConfirm=document.getElementById('confirmSignature').onclick;
-document.getElementById('confirmSignature').onclick=async()=>{if(!signerMode){oldConfirm();return}if(!hasInk){alert('يرجى التوقيع أولًا');return}const btn=document.getElementById('confirmSignature');btn.disabled=true;try{const data=canvas.toDataURL('image/png');const m=await cloudRpc('meeting_read',{p_token:new URLSearchParams(location.search).get('meeting')});const name=m.content.members[signingSlot-1];await cloudRpc('meeting_sign',{p_token:new URLSearchParams(location.search).get('meeting'),p_slot:signingSlot,p_name:name,p_image:data});modal.hidden=true;alert('تم حفظ توقيعك في المحضر المشترك');await tryFinalArchive(new URLSearchParams(location.search).get('meeting'));await showSigner(new URLSearchParams(location.search).get('meeting'))}catch(e){alert('لم يتم حفظ التوقيع: '+e.message)}finally{btn.disabled=false}};
+document.getElementById('confirmSignature').onclick=async()=>{
+ if(!signerMode){oldConfirm();return}if(!hasInk){alert('يرجى التوقيع أولًا');return}
+ const btn=document.getElementById('confirmSignature');btn.disabled=true;
+ try{const token=new URLSearchParams(location.search).get('meeting');const data=canvas.toDataURL('image/png');await cloudRpc('alimr_open_sign',{p_token:token,p_name:signerName,p_role:signerRole,p_image:data});modal.hidden=true;alert('تم حفظ اسمك وتوقيعك في المحضر المشترك');await showSigner(token)}
+ catch(e){alert('لم يتم حفظ التوقيع: '+e.message)}finally{btn.disabled=false}
+};
 document.getElementById('cloudCreate').onclick=createShared;
 document.getElementById('cloudRefresh').onclick=refreshCloud;
 document.getElementById('cloudArchive').onclick=renderCloudArchive;
 document.getElementById('copyCloudLink').onclick=async()=>{const v=document.getElementById('cloudLink').value;if(!v){alert('أنشئ الرابط أولًا');return}try{await navigator.clipboard.writeText(v);alert('تم نسخ الرابط')}catch{prompt('انسخ الرابط:',v)}};
 document.getElementById('signerRefresh').onclick=()=>showSigner(new URLSearchParams(location.search).get('meeting'));
 
-// الأرشيف النهائي المشترك: لا تُعتمد النسخة إلا بعد توقيع جميع الأسماء المسجلة.
-async function tryFinalArchive(token,meeting){
-  try{
-    if(!meeting)meeting=await cloudRpc('meeting_read',{p_token:token});
-    const total=(meeting.content?.members||[]).filter(x=>String(x||'').trim()).length;
-    if(total && (meeting.signatures||[]).length>=total){
-      await cloudRpc('alimr_archive_completed',{p_token:token});
-      if(!signerMode)setCloudStatus('اكتملت التوقيعات وحُفظ المحضر في الأرشيف النهائي السحابي.');
-    }
-  }catch(e){if(!signerMode)setCloudStatus('تعذر الأرشفة النهائية: '+e.message+' — تحقق من تنفيذ ملف SQL');}
-}
+// إغلاق التوقيع يدويًا؛ العدد مفتوح ولا يمكن معرفة متى انتهى الجميع تلقائيًا.
 async function showFinalArchive(){
-  const box=document.getElementById('finalArchiveList');box.replaceChildren();
-  const heading=document.createElement('h2');heading.textContent='الأرشيف النهائي السحابي';box.append(heading);
-  try{
-    const entries=await cloudRpc('alimr_archive_list',{p_password:'134679'});
-    if(!entries.length){box.append(makeText('p','لا توجد محاضر مكتملة التوقيع بعد.'));return;}
-    entries.forEach(item=>{
-      const row=document.createElement('div');row.className='archive-item';
-      const label=document.createElement('span');label.textContent=item.title+' — '+item.signed_count+'/'+item.members_count+' توقيع — '+new Date(item.archived_at).toLocaleString('ar-SA');
-      const btn=document.createElement('button');btn.textContent='فتح المحضر النهائي / طباعة';
-      btn.onclick=async()=>{
-        try{
-          const data=await cloudRpc('alimr_archive_read',{p_password:'134679',p_token:item.token});
-          if(!data)throw Error('المحضر غير موجود');
-          const preview=document.getElementById('signerPreview');
-          renderSignerPreview(data);
-          document.getElementById('cloudPanel').hidden=true;
-          document.querySelector('.nav').hidden=true;
-          document.getElementById('editor').hidden=true;
-          document.getElementById('archive').hidden=true;
-          document.getElementById('signerView').hidden=false;
-          document.getElementById('signerInfo').textContent='نسخة نهائية مؤرشفة — '+item.title;
-          document.getElementById('signerMembers').replaceChildren();
-          const actions=document.createElement('div');actions.className='actions';
-          const print=document.createElement('button');print.textContent='طباعة / حفظ PDF';print.onclick=()=>window.print();
-          const back=document.createElement('button');back.textContent='العودة للأرشيف';back.onclick=()=>{
-            document.getElementById('signerView').hidden=true;
-            document.getElementById('cloudPanel').hidden=false;
-            document.querySelector('.nav').hidden=false;
-            show('editor');showFinalArchive();
-          };actions.append(print,back);document.getElementById('signerMembers').append(actions);
-          window.scrollTo(0,0);
-        }catch(e){alert('تعذر فتح المحضر: '+e.message)}
-      };
-      row.append(label,btn);box.append(row);
-    });
-  }catch(e){box.append(makeText('p','تعذر تحميل الأرشيف السحابي: '+e.message+' — نفذ ملف SQL في Supabase أولًا.'));}
+ const box=document.getElementById('finalArchiveList');box.replaceChildren();box.append(makeText('h2','الأرشيف النهائي السحابي'));
+ try{const entries=await cloudRpc('alimr_open_archive_list',{p_password:'134679'});
+ if(!entries.length){box.append(makeText('p','لا توجد محاضر مغلقة بعد.'));return}
+ entries.forEach(item=>{const row=document.createElement('div');row.className='archive-item';row.append(makeText('span',item.title+' — '+item.signed_count+' توقيع — '+new Date(item.archived_at).toLocaleString('ar-SA')));
+ const btn=document.createElement('button');btn.textContent='فتح المحضر النهائي / طباعة';btn.onclick=async()=>{try{const m=await cloudRpc('alimr_open_archive_read',{p_password:'134679',p_token:item.token});renderSignerPreview(m);document.getElementById('cloudPanel').hidden=true;document.querySelector('.nav').hidden=true;document.getElementById('editor').hidden=true;document.getElementById('archive').hidden=true;document.getElementById('signerView').hidden=false;document.getElementById('signerInfo').textContent='نسخة نهائية مؤرشفة — '+item.title;const members=document.getElementById('signerMembers');members.replaceChildren();const print=document.createElement('button');print.textContent='طباعة / حفظ PDF';print.onclick=()=>window.print();const back=document.createElement('button');back.textContent='العودة للأرشيف';back.onclick=()=>{document.getElementById('signerView').hidden=true;document.getElementById('cloudPanel').hidden=false;document.querySelector('.nav').hidden=false;show('editor');showFinalArchive()};members.append(print,back);window.scrollTo(0,0)}catch(e){alert(e.message)}};row.append(btn);box.append(row)})
+ }catch(e){box.append(makeText('p','تعذر تحميل الأرشيف: '+e.message))}
 }
+async function closeShared(){if(!sharedToken){alert('اختر المحضر المشترك أولًا');return}if(!confirm('إغلاق التوقيع نهائيًا ونقل المحضر إلى الأرشيف النهائي؟ لن يتمكن أعضاء جدد من التوقيع.'))return;
+ try{await cloudRpc('alimr_open_close',{p_token:sharedToken,p_password:'134679'});await refreshCloud();await showFinalArchive();alert('تم إغلاق التوقيع وأرشفة المحضر')}
+ catch(e){alert('تعذر الإغلاق: '+e.message)}
+}
+const closeButton=document.createElement('button');closeButton.type='button';closeButton.textContent='إغلاق التوقيع وأرشفة المحضر';closeButton.onclick=closeShared;document.querySelector('#cloudPanel .actions').append(closeButton);
 document.getElementById('finalArchiveButton').onclick=showFinalArchive;
-
 const incoming=new URLSearchParams(location.search).get('meeting');if(incoming)showSigner(incoming);
 </script></body></html>
